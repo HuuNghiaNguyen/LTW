@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web assignment</title>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    
+</head>
+
+<body>
+    <!-- Begin of Navbar -->
+    <div class="container3">
+        <nav class="navbar is-light " id="scrollNav" role="navigation" aria-label="main navigation" style="margin-top: 0;">
+            <!-- Respondsive -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#topsection">
+                    <img src="./img/logo.png">
+                </a>
+
+                <a class="navbar-item" id="btn-music-toggle2" onclick="musicToggle()" style="margin-left: auto;">
+                    ▶
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div id="navbarBasicExample" class="navbar-menu">
+                <!-- Items in left side -->
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+
+                    
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Places
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="./hanoi.html">
+                                Ha Noi
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./tphcm.html">
+                                Ho Chi Minh city
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./danang.html">
+                                Da Nang
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+                </div>
+                <!-- Items in right side -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-link" id="btn-music-toggle" onclick="musicToggle()">
+                                ▶
+                            </a>
+                            
+                            <a class="button is-info">
+                                Sign up
+                            </a>
+                            <a class="button is-success">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <span id="topsection"></span>
+        <!-- Add space between nav and content -->
+        <div style="padding-top: 58px;"></div>
+
+        <img src="./img/danang/bg.jpg" style="margin-left: 0vw;">
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column is-8-desktop wow fadeIn" style="border: 1px solid grey; border-radius: 10px; background-color: seashell;">
+                <p style="font-weight: bold;">About Da Nang</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With broad beaches, fantastic street food, the fabled Hai Van Pass, and a growing collection of cafes, restaurants, and bars, it’s no wonder the residents of Da Nang sport some of the broadest smiles in the country. Da Nang is a true beach city. The warm sands of My Khe Beach sweep south from the mountainous Son Tra Peninsula. Da Nang hosts some of Vietnam's top luxury resorts, but much of the beach still belongs to the people who make it their playground, gym, and source of livelihood.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Da Nang marks the halfway point between the capital in the north, Hanoi, and Ho Chi Minh City in the south. It’s the fourth largest city in Vietnam. Apart from some shopping highlights and historical sights, the main reason for most travellers staying here is its proximity to the well-known My Khe Beach, Lang Co Beach, Hoi An and My Son.</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lang Co Beach is lined with palm trees, the water of the nearby ocean crystal-clear and enticing, lapping onto white sand. It is a peninsula with a sparkling lagoon on one side, and the beach on the other. The area is fairly under-developed, although recent years have seen many new hotels opening. My Khe Beach is more developed, since it was a popular spot for American soldiers seeking R&R during the Vietnam-US War. Water sport activities here are in abundance, and it can get very crowded over weekends and holidays. Da Nang’s coastline stretches 30 kilometres, renowned for calm, cool waters and also popular for fishing, water-skiing, diving, and yachting.
+            </div>
+
+            <div class="column is-4-desktop wow fadeIn">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid grey;border-radius: 10px;background-color: lightpink;">
+                        <p style="font-weight: bold;">Start planning for Da Nang</p>
+                        Create a Trip to save and organize all of your travel ideas, and see them on a map<br><br>
+                        <div class="buttons">
+                            <button class="button is-danger">Create a Trip</button>
+                          </div>
+                    </div>
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid white;border-radius: 10px;">
+                        <img src="./img/danang//map.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column">
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Top things to do <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                <div class="columns is-multiline" id="bg-danang1">
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen; ">Enjoy the beach</p>
+
+                        In the early morning there is a palpable sense of positive energy in Da Nang. It’s impossible not to feel the buzz of Da Nang life and be swept along with it, so be sure to set the alarm clock early at least once on your stay. Along the shore, fishermen sell the day’s catch, football and volleyball matches spring up all around, and people jog, stroll or simply relax as the morning breeze kicks up and waves wash the sands.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">See the Son Tra Peninsula</p>
+
+                        The Son Tra Peninsula strikes out into the ocean, its densely forested hillsides are home to rhesus macaques, long-tailed macaques, pygmy lorises, and the endangered red shanked douc langur -- one of the world’s most striking primates. Grab some binoculars, hire a motorbike, and head out for a day of wildlife spotting.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Learn about Cham culture</p>
+                    
+                        A couple of hours outside of Da Nang lies My Son Sanctuary, a UNESCO-listed complex of abandoned temples dating from the 4th to the 14th century. Hidden among the jungle, some towers are overgrown and many are in ruin, but enough remains to whisk you back in time. To learn more about Cham culture, visit the superb Cham Museum of Sculpture in Da Nang, home to the largest collection of Cham sculpture in the world. 
+                
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Dine on street food </p>
+
+                        Da Nang is a dream destination for foodies, with scores of seafront eateries serving every night of the week. Banh mi—the Vietnamese baguette—is taken to a new level here. Mi Quang is another delight and every Da Nang local will offer an opinion on where to find the best. Each bowl features yellow rice noodles, pork, shrimp, and a flavour-infused broth topped off with chopped peanuts, quail eggs and plenty of fresh herbs.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Plan a daytrip</p>
+                
+                        Marble Mountains, a collection of five outcrops topped with atmospheric pagodas, is a rewarding daytrip from Da Nang. Not far away, Ba Na Hills has made a comeback in recent years thanks to a record-breaking 5km cable car that rises almost 1,300m from sea level. The view across the mountain and jungles from the cable car is spectacular, but the fun begins at the top with an alpine coaster, funicular railway, 18-hole golf course and more. 
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Drive the Hai Van Pass</p>
+                
+                        Hai Van Pass is one of the finest stretches of coastal road anywhere in Vietnam. Climbing for 9km out of Danang, you'll be rewarded by views of deserted beaches and jungle-clad slopes. The descent on the other side leads to the Lang Co lagoon, where floating restaurants will be happy to serve you a fresh seafood lunch.
+                    </div>
+                </div>
+            
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Itineraries <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+            
+                <div class="columns is-multiline"  id="bg-hn2">
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">24 hours in Da Nang</p>
+
+                        Rise early and enjoy the buzz of My Khe beach before a ride out onto the Son Tra Peninsula in search of primates. Escape the afternoon sun at the Museum of Cham Sculpture then head for a sundowner at Sky 36.
+                    </div>
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">48 hours in Da Nang</p>
+
+                        With an extra 24 hours choose from a cultural visit to the UNESCO-listed My Son Sanctuary, a road trip over the stunning Hai Van Pass coastal road, or a ride in a record breaking 5km long cable car up to the fantasy theme park of Ba Na Hills.
+                    </div>
+                    
+                </div>
+                
+
+                
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Weather & Transport <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="columns is-multiline"  id="bg-danang3">
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Weather</p>
+
+                        Danang is a great destination nearly year round. The best months to visit are from March to May and September to October, when the weather is warm and crowds minimal. June - August is prime time for local tourists; it’s very hot then but very little rain and the sea is clear and calm. 
+                    </div>
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Transport to Ha Noi</p>
+
+                        The Danang International Airport has a number of daily connections from Ho Chi Minh City and Hanoi, as well as other major cities in Vietnam. There are also a growing number of international connecting flights from Hong Kong, Cambodia, South Korea, Japan, China, Bangkok, and Singapore.
+                    </div>
+                    
+                </div>
+
+                <div style="margin: 0 20px 20px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Gallery <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+
+
+        <div style="position: relative; margin-bottom: 2vh;">
+            <div class="owl-carousel owl-theme" id="hanoi-carousel">
+                <div class="item"><img src="./img/danang//4.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//5.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//6.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//7.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//8.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//9.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/danang//10.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/danang//11.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/danang//12.jpg" style="padding-right: 5px"></div>
+            </div>
+        </div>
+
+
+        <div style="margin: 0 40px 40px 40px;">
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                    Nearby Places <!--Padding is optional-->
+                </span>
+            </div>
+        </div>
+
+        <div class="columns is-mobile" style="text-align: center;">
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/danang//hoian.jpg" alt="Ha Long">
+                    <span class="nextPlace">Hoi An</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/danang//hue.jpg" alt="Sapa"><br>
+                    <span class="nextPlace">Hue</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/danang//dalat.jpg" alt="Ha Giang"><br>
+                    <span class="nextPlace">Da Lat</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="columns has-text-centered is-mobile">
+                <div class="column is-4">ID: 1927027 <br> <a href="#">Privacy Policy</a></div>
+                <div class="column is-8">nghia.nguyenhuu@hcmut.edu.vn <br> <a href="#">Terms & Conditions</a></div>
+            </div>
+        </div>     
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/myjs.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+
+    <!-- Music -->
+    <!-- <iframe src="./snd/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio loop controls id="bg-music" style="display: none">
+        <source src="./snd/music4.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

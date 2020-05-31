@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web assignment</title>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    
+</head>
+
+<body>
+    <!-- Begin of Navbar -->
+    <div class="container3">
+        <nav class="navbar is-light " id="scrollNav" role="navigation" aria-label="main navigation" style="margin-top: 0;">
+            <!-- Respondsive -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#topsection">
+                    <img src="./img/logo.png">
+                </a>
+
+                <a class="navbar-item" id="btn-music-toggle2" onclick="musicToggle()" style="margin-left: auto;">
+                    ▶
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div id="navbarBasicExample" class="navbar-menu">
+                <!-- Items in left side -->
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+
+                    
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Places
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="./hanoi.html">
+                                Ha Noi
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./tphcm.html">
+                                Ho Chi Minh city
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./danang.html">
+                                Da Nang
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+                </div>
+                <!-- Items in right side -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-link" id="btn-music-toggle" onclick="musicToggle()">
+                                ▶
+                            </a>
+                            
+                            <a class="button is-info">
+                                Sign up
+                            </a>
+                            <a class="button is-success">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <span id="topsection"></span>
+        <!-- Add space between nav and content -->
+        <div style="padding-top: 58px;"></div>
+
+        <img src="./img/tphcm/bg.jpg" style="margin-left: 0vw;">
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column is-8-desktop wow fadeIn" style="border: 1px solid grey; border-radius: 10px; background-color: seashell;">
+                <p style="font-weight: bold;">About Ho Chi Minh city</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The city has recovered in the 30 years, with the current population at over 7 million. It was renamed Ho Chi Minh City, after the spiritual leader of Vietnamese Communism, but residents were so reluctant to adopt the new name that authorities kept the official name but the city centre is still called Saigon.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, Ho Chi Minh City is a popular tourist destination due to its fascinating culture, classic French architecture, and sleek skyscrapers as well as ornate temples and pagodas. The city is also filled with rooftop bars that overlook Saigon and beyond, while fantastic restaurants offer a combination of French, Chinese, and, of course, local Vietnamese cuisine.</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vibrating with energy, innovation and traffic – lots of traffic – Ho Chi Minh City, formerly known as Saigon, is the economic heart of Vietnam and the main hub of the southern region. A freewheeling, cosmopolitan metropolis, HCMC's dynamic cityscape draws together old and new Vietnam in the most compact of spaces, representing the city’s past as well as its future.
+            </div>
+
+            <div class="column is-4-desktop wow fadeIn">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid grey;border-radius: 10px;background-color:aquamarine;">
+                        <p style="font-weight: bold;">Start planning for Ho Chi Minh city</p>
+                        Create a Trip to save and organize all of your travel ideas, and see them on a map<br><br>
+                        <div class="buttons">
+                            <button class="button is-danger">Create a Trip</button>
+                          </div>
+                    </div>
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid white;border-radius: 10px;">
+                        <img src="./img/tphcm/map.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column">
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Top things to do <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                <div class="columns is-multiline" id="bg-hcm1">
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen; ">See the top landmarks</p>
+
+                        Ho Chi Minh City's colonial attractions are sprinkled around District 1, with the Reunification Palace looking down tree-lined Le Duan Boulevard where you'll find the Notre Dame Cathedral and the city's Central Post Office. Walk down Dong Khoi street, and you'll pass the Saigon Opera House and the Continental Hotel. On a more local level, the Ben Thanh Market and the Jade Emperor Pagoda are both worth a stop.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Shop small boutiques</p>
+
+                        Around District 1, a host of old apartments and former office buildings have been repurposed as shopping centers, leading to some surprising retail discoveries. Decades-old buildings such as 22 Ly Tu Trong and 42 Nguyen Hue are good examples of these impromptu shopping malls. The streets and alleys branching off of Dong Khoi are packed with all kinds of fascinating stores.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Visit the War Remnants Museum</p>
+                    
+                        The War Remnants Museum recounts a tumultuous time in 20th-century Vietnamese history, documenting both the atrocities of the war and the aftermath of the conflict. If you're interested in learning about the war from another point of view, this museum offers a wealth of information as well as some compelling photo exhibits.
+                
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Explore the Chinese Quarter</p>
+
+                        The Chinese neighbourhood known as Cho Lon houses Binh Tay Market, a colossal wholesale trading center, as well as Thien Hau Pagoda, an atmospheric temple that pays homage to the goddess of the sea amid clouds of incense and burning votive paper. Next door, the colorful Chaozhou Assembly Hall and pale blue Cho Lon Mosque highlight the neighbourhood's intersection of cultures.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Hop on a motorcycle</p>
+                
+                        Beyond landmarks, Ho Chi Minh City serves up a taste of urban Vietnam by way of its traffic. Do as the locals do and hop on the back of a motorbike to see the city on street level and feel its energetic pulse. If you can't drive, there are many tour companies offering motorbike tours. Some of the best set off in the evening, when the city is at its most romantic and the sidewalk vendors are out in force.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Eat street food </p>
+                
+                        Though they may be small and sometimes difficult to find, Ho Chi Minh City's contemporary art galleries are worth your effort. Start your artistic adventure at the Fine Arts Museum, once the mansion of one of HCMC's wealthiest residents, before venturing out to other spaces. Noteworthy venues include Galerie Quynh, The Factory and Craig Thomas Gallery.
+                    </div>
+                </div>
+            
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Itineraries <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+            
+                <div class="columns is-multiline"  id="bg-hcm2">
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">24 hours in Ho Chi Minh City</p>
+
+                        Begin your day early with a wander around Hoan Kiem and soak up the invigorating rhythm of life, with everything from open air aerobics to laughing yoga ringing across the waters. After a breakfast phở, wander the streets of the Old Quarter before sampling the capital’s staple lunch dish, bún chả. Visit the Women’s Museum in the afternoon, then head to Summit Lounge for the best sunset views in town before crowning the day with dinner at Chim Sao.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">48 hours in Ho Chi Minh City</p>
+
+                        Plan an early morning visit to Cong Vien Thong Nhat, then head to the Museum of Fine Arts before refreshing with a drink at Manzi, for a rewarding morning of artistic exploration. In the afternoon go temple-hopping around West Lake, stopping at some of the many coffee and juice bars that surround it. For a Vietnamese dinner, dine at Nha Hang Ngon. Round out your 48 hours with a nightcap at Hanoi’s coolest bar, Tadioto.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">72 hours in Ho Chi Minh City</p>
+
+                        For one more day in Ho Chi Minh City, add on a tour, either in town or just beyond the city limits. Book a motorbike excursion out to the Mekong Delta for a taste of rural life, brush up on your history with a trip to the Cu Chi Tunnels or get your dose of local culture by heading out to District 6’s Cho Lon area. A handful of other activities such as cooking classes and spa facilities are also worthy options.
+                    </div>
+                    
+                </div>
+                
+
+                
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Weather & Transport <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="columns is-multiline"  id="bg-hcm3">
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Weather</p>
+
+                        Rainy season runs from May to November, however the Ho Chi Minh City is a year-round destination. April and May tend to be especially hot, while cooler weather appears around December and January. Perhaps the only ill-advised time to visit would be during Tết, the Vietnamese Lunar New Year, as most residents head back to their hometowns for the holiday.
+                    </div>
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Transport to Ha Noi</p>
+
+                        Travellers can arrive in Ho Chi Minh City by bus, train or plane. Tan Son Nhat, the international airport, welcomes foreign and domestic arrivals everyday, while various bus companies operate shuttles from Phnom Penh and domestic destinations. As the terminus of Vietnam's north-south railway, Ho Chi Minh City also sees a steady stream of train travellers.
+                    </div>
+                    
+                </div>
+
+                <div style="margin: 0 20px 20px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Gallery <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+
+
+        <div style="position: relative; margin-bottom: 2vh;">
+            <div class="owl-carousel owl-theme" id="hanoi-carousel">
+                <div class="item"><img src="./img/tphcm/4.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/5.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/6.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/7.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/8.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/9.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/tphcm/10.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/tphcm/11.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/tphcm/12.jpg" style="padding-right: 5px"></div>
+            </div>
+        </div>
+
+
+        <div style="margin: 0 40px 40px 40px;">
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                    Nearby Places <!--Padding is optional-->
+                </span>
+            </div>
+        </div>
+
+        <div class="columns is-mobile" style="text-align: center;">
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/tphcm/mekongdelta.jpg" alt="Ha Long">
+                    <span class="nextPlace">Mekong Delta</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/tphcm/phuquoc.jpg" alt="Sapa"><br>
+                    <span class="nextPlace">Phu Quoc</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/tphcm/condao.jpg" alt="Ha Giang"><br>
+                    <span class="nextPlace">Con Dao</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="columns has-text-centered is-mobile">
+                <div class="column is-4">ID: 1927027 <br> <a href="#">Privacy Policy</a></div>
+                <div class="column is-8">nghia.nguyenhuu@hcmut.edu.vn <br> <a href="#">Terms & Conditions</a></div>
+            </div>
+        </div>     
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/myjs.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+
+    <!-- Music -->
+    <!-- <iframe src="./snd/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio loop controls id="bg-music" style="display: none">
+        <source src="./snd/music3.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

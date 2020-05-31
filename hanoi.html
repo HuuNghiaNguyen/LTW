@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web assignment</title>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    
+</head>
+
+<body>
+    <!-- Begin of Navbar -->
+    <div class="container3">
+        <nav class="navbar is-light " id="scrollNav" role="navigation" aria-label="main navigation" style="margin-top: 0;">
+            <!-- Respondsive -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#topsection">
+                    <img src="./img/logo.png">
+                </a>
+
+                <a class="navbar-item" id="btn-music-toggle2" onclick="musicToggle()" style="margin-left: auto;">
+                    ▶
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div id="navbarBasicExample" class="navbar-menu">
+                <!-- Items in left side -->
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+
+                    
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Places
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="./hanoi.html">
+                                Ha Noi
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./tphcm.html">
+                                Ho Chi Minh city
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./danang.html">
+                                Da Nang
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+                </div>
+                <!-- Items in right side -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-link" id="btn-music-toggle" onclick="musicToggle()">
+                                ▶
+                            </a>
+                            
+                            <a class="button is-info">
+                                Sign up
+                            </a>
+                            <a class="button is-success">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <span id="topsection"></span>
+        <!-- Add space between nav and content -->
+        <div style="padding-top: 58px;"></div>
+
+        <img src="./img/hanoi/bg.jpg" style="margin-left: 0vw;">
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column is-8-desktop wow fadeIn" style="border: 1px solid grey; border-radius: 10px; background-color: seashell;">
+                <p style="font-weight: bold;">About Hanoi</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The charming Vietnamese capital has aged well, preserving the Old Quarter, monuments and colonial architecture, while making room for modern developments alongside. Hanoi may have shrugged off several former names, including Thang Long, or "ascending dragon," but it hasn't forgotten its past, as sites such as Ho Chi Minh's Mausoleum and Hoa Lo Prison attest. Lakes, parks, shady boulevards and more than 600 temples and pagodas add to the appeal of this city, which is easily explored by taxi. </p><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded over 1000 years ago, Vietnam’s capital city is rich in history, with the streets of its rambling Old Quarter dating back to the 14th century. Wandering these tree-lined lanes past crumbling colonial facades will transport you back in time. However, today's Hanoi is about much more than the past. The ancient city is being invigorated with modern cafes, world-class restaurants, and cool art galleries. When the sun goes down, you have your pick of watering holes, from sophisticated rooftop bars to buzzing bia hoi.
+            </div>
+
+            <div class="column is-4-desktop wow fadeIn">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid grey;border-radius: 10px;background-color: powderblue;">
+                        <p style="font-weight: bold;">Start planning for Hanoi</p>
+                        Create a Trip to save and organize all of your travel ideas, and see them on a map<br><br>
+                        <div class="buttons">
+                            <button class="button is-danger">Create a Trip</button>
+                          </div>
+                    </div>
+                    <div class="column is-12-desktop is-6-tablet is-12-mobile" style="border: 1px solid white;border-radius: 10px;">
+                        <img src="./img/hanoi/map.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-desktop is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0;">
+            <div class="column">
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Top things to do <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                <div class="columns is-multiline" id="bg-hn1">
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen; ">Sample the street food</p>
+
+                        A wander around a morning market provides a tantalising hint of what you can expect to hit your table in Hanoi. For an authentic taste of Hanoi, look no further than the street kitchens of the Old Quarter. Phở noodle soup is king of cuisines here, with steaming pots of its star anise-infused broth simmering on every corner; while every day, the irresistible scent of bún chả fills the air as barbecued pork sizzles over hot coals. In recent years a growing band of superb international dining rooms have emerged, serving everything from contemporary tapas to fusion fare.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Stroll the Old Quarter</p>
+
+                        Hanoi’s Old Quarter serves up a sensory overload for the eyes, ears and nose. Wisps of incense drift out onto streets from ancient temples painted a riot of reds and oranges, while in a far-flung corner the clang of a blacksmith’s hammer mingles with a mobile fruit seller’s call. To fully immerse yourself, grab a map to explore. Or jump in a cyclo and take a tour of this intoxicating maze of markets, street kitchens, shop houses, and more.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Explore Hanoi's cafe culture</p>
+                    
+                        It is by taking a seat and waiting as your coffee slowly filters that the Vietnamese capital can best be understood. Fast-paced on the surface, the true rhythm of city life is far from hurried. Alongside the thousands of coffee houses selling traditional Vietnamese coffee, an ever-growing band of unique coffee shops serve espressos and macchiatos in surroundings rivaling the world’s coolest caffeine dens.
+                
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Check out the art scene</p>
+
+                        Hanoi has long had a reputation as Vietnam’s art capital, with the elegant Fine Arts Museum housing the country’s foremost collection, including ancient Cham artifacts and impressionist pieces. For something more contemporary, head for Manzi--an art space-cum-cafe--or the Vietnam Art Gallery. Both are top places to take the pulse of the city’s art scene. Smaller gallery spaces include Nha San Collective at the up-and-coming Hanoi Creative City urban project.
+                    </div>
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color: darkgreen;">Join the locals at Hoan Kiem Lake</p>
+                
+                        Hoan Kiem lake rests at the heart of Hanoi and embodies the soul of the city. Every morning it comes alive with walkers, aerobics classes, badminton, ballroom dancers, and even a laughing yoga group. It bursts back into life at sunset, and after dark, is again thronged with locals out to take the evening air. A little further north the lesser-visited Truc Bach and West Lake shouldn’t be missed--their calm temples and lakeside cafes provide peaceful enclaves away from the buzz of downtown.
+                    </div>
+                </div>
+            
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Itineraries <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+            
+                <div class="columns is-multiline"  id="bg-hn2">
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">24 hours in Hanoi</p>
+
+                        Begin your day early with a wander around Hoan Kiem and soak up the invigorating rhythm of life, with everything from open air aerobics to laughing yoga ringing across the waters. After a breakfast phở, wander the streets of the Old Quarter before sampling the capital’s staple lunch dish, bún chả. Visit the Women’s Museum in the afternoon, then head to Summit Lounge for the best sunset views in town before crowning the day with dinner at Chim Sao.
+                    </div>
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkred;">48 hours in Hanoi</p>
+
+                        Plan an early morning visit to Cong Vien Thong Nhat, then head to the Museum of Fine Arts before refreshing with a drink at Manzi, for a rewarding morning of artistic exploration. In the afternoon go temple-hopping around West Lake, stopping at some of the many coffee and juice bars that surround it. For a Vietnamese dinner, dine at Nha Hang Ngon. Round out your 48 hours with a nightcap at Hanoi’s coolest bar, Tadioto.
+                    </div>
+                    
+                </div>
+                
+
+                
+                <div style="margin: 0 40px 40px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Weather & Transport <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="columns is-multiline"  id="bg-hn3">
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Weather</p>
+
+                        The climate is inviting from April to June, but Hanoi is particularly beautiful in May when its many trees come into bloom – orange, white, purple and red flowers elevate the already beguiling street scenes to another level. October and November are also excellent months to visit when temperatures are cooler.
+                    </div>
+                    <div class="column is-6-desktop is-6-tablet is-12-mobile wow fadeIn">
+                        <p style="font-weight: bold; color:darkblue;">Transport to Ha Noi</p>
+
+                        Hanoi is served by Noi Bai international airport as well as trains. A bus network links all major destinations within the country and international buses also link the capital with Laos.
+                    </div>
+                    
+                </div>
+
+                <div style="margin: 0 20px 20px 40px;">
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                        <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                            Gallery <!--Padding is optional-->
+                        </span>
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+
+
+        <div style="position: relative; margin-bottom: 2vh;">
+            <div class="owl-carousel owl-theme" id="hanoi-carousel">
+                <div class="item"><img src="./img/hanoi/4.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/5.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/6.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/7.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/8.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/9.jpg" style="padding-right: 5px;"></div>
+                <div class="item"><img src="./img/hanoi/10.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/hanoi/11.jpg" style="padding-right: 5px"></div>
+                <div class="item"><img src="./img/hanoi/12.jpg" style="padding-right: 5px"></div>
+            </div>
+        </div>
+
+
+        <div style="margin: 0 40px 40px 40px;">
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                    Nearby Places <!--Padding is optional-->
+                </span>
+            </div>
+        </div>
+
+        <div class="columns is-mobile" style="text-align: center;">
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/hanoi/halong.jpg" alt="Ha Long">
+                    <span class="nextPlace">Ha Long</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/hanoi/sapa.jpg" alt="Sapa"><br>
+                    <span class="nextPlace">Sapa</span>
+                </p>
+            </div>
+
+                
+            
+            <div class="column is-4-desktop is-4-mobile is-4-tablet">
+                <p style="position: relative;"><img class="enlarge" src="./img/hanoi/hagiang.jpg" alt="Ha Giang"><br>
+                    <span class="nextPlace">Ha Giang</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="columns has-text-centered is-mobile">
+                <div class="column is-4">ID: 1927027 <br> <a href="#">Privacy Policy</a></div>
+                <div class="column is-8">nghia.nguyenhuu@hcmut.edu.vn <br> <a href="#">Terms & Conditions</a></div>
+            </div>
+        </div>     
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/myjs.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+
+    <!-- Music -->
+    <!-- <iframe src="./snd/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio loop controls id="bg-music" style="display: none">
+        <source src="./snd/music2.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

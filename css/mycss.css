@@ -343,3 +343,7 @@ body{
   transform: scale(1);
   transition: 0.5s;
 }
+
+.button{
+  font-size: small;
+}

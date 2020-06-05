@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web assignment</title>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    
+</head>
+
+<body>
+    <!-- Begin of Navbar -->
+    <div class="container3">
+        <nav class="navbar is-light " id="scrollNav" role="navigation" aria-label="main navigation" style="margin-top: 0;">
+            <!-- Respondsive -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#topsection">
+                    <img src="./img/logo.png">
+                </a>
+
+                <a class="navbar-item" id="btn-music-toggle2" onclick="musicToggle()" style="margin-left: auto;">
+                    ▶
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div id="navbarBasicExample" class="navbar-menu">
+                <!-- Items in left side -->
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+
+                    
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Places
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="./hanoi.html">
+                                Ha Noi
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./tphcm.html">
+                                Ho Chi Minh city
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="./danang.html">
+                                Da Nang
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <a class="navbar-item" href="./tour.html">
+                        Tour
+                    </a>
+                    <a class="navbar-item" href="./contact.html">
+                        Contact
+                    </a>
+                    <a class="navbar-item" href="./about.html">
+                        About
+                    </a>
+                </div>
+                <!-- Items in right side -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-link" id="btn-music-toggle" onclick="musicToggle()">
+                                ▶
+                            </a>
+                            
+                            <a class="button is-info">
+                                Sign up
+                            </a>
+                            <a class="button is-success">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <span id="topsection"></span>
+        <!-- Add space between nav and content -->
+        <div style="padding-top: 58px;"></div>
+
+        <img src="./img/tour/bg.jpg" style="margin-left: 0vw; width: 100%;">
+
+
+
+
+        <div style="margin: 0 40px 40px 40px;">
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; ">
+                <span style="font-size: 30px; background-color: white; padding: 0 10px;">
+                    Best selling <!--Padding is optional-->
+                </span>
+            </div>
+        </div>
+
+         
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/1.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> DUONG LAM ANCIENT VILLAGE</div>
+                Time : Full Day (Departure on Saturday & Sunday)<br>
+                Transport : Bus<br>
+                If you visit Duong Lam during the harvest season, you can smell the freshly cut rice and see farmers drying straw along country lanes. Some historic sites included in the tour are King Phung Hung and King Ngo Quyen's Temple. Mong Phu Communal House, etc.
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,495,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/2.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> NINH BINH - INLAND HA LONG BAY</div>
+                Time : Full Day (Daily Departure)<br>
+                Transport : Bus<br>
+                About 100 km from Hanoi, Ninh Binh is well-known with diversity of lakes, forests, famous historical and cultural relics. The full-day tour features a visit to King Dinh and King Le's temples,Tam Coc & Bich Dong cave  and a boat ride along Ben Dang river.
+            
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,587,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/3.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> CRUISE IN HA LONG BAY TOUR</div>
+                Time : Full Day (Daily Departure)<br>
+                Transport : Bus<br>
+                A boat cruise in Ha Long Bay, a world natural heritage site recognized by UNESCO, is absolutely marvelous. You will visit spectacular caves and grottoes, and many islands which have been given individual names that remind of intriguing legends: Dog Island, Fighting Cock Island, Heaven gate Cave, Dau Go Grotto, etc. A lunch on the board is also included in the tour.
+            
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 2,277,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/4.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> HA NOI CITY TOUR</div>
+                Time : Haft Day (Daily Departure)<br>
+                Transport : Bus<br>
+                Hanoi city tour takes you to the most famous sights of Hanoi such as Hochiminh Mausoleum (outside for photo shots only), Presidential Palace, Literature Temple, Tran Quoc Pagoda, etc. The tour also includes a cyclo ride to Dong Xuan Market, the largest market in Hanoi which is located in the heart of the Old Quarter.
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,117,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/5.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> NORTHERN OF VIET NAM - HANOI CITY | NINH BINH | HALONG BAY</div>
+                Time : 6 days 5 nights| Fortnightly departures<br>
+                Transport : Car<br>
+                Wrapped up in 6-day duration, this group package not only offers you the general view of Hanoi – the charming capital of Vietnam but gives you such a unique experience to compare the real Ha Long Bay in the Gulf of Tonkin with the "Inland Ha Long Bay" - Tam Coc Bich Dong Cave. While Ha Long Bay is a famous site with interesting karsts structure, which is part of the UNESCO Heritage List and also included in the List of the World Natural Wonders), Ninh Bình is known as the country's ancient capital with its peacefully picturesque.
+                
+
+                
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 7,587,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/6.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> HO CHI MINH CITY TOUR </div>
+                Time : Half Day (Daily Departure)<br>
+                Transport : Car<br>
+                This city tour will take you around the busiest urban city of Vietnam, from downtown Saigon to Cho Lon (District 5), in order to get a general view of a vital economic hub with bustling life. You will get to know its history and culture with stops at History Museum, Thien Hau Temple, Huyen Sy Church and Van Phat Pagoda. You may not only learn about the past but also get a glimpse of the daily life of stalls and street vendors at Hoa Binh Market and see other places of interests such as Notre Dame Cathedral, Municipal Post Office, etc. A stopover at a well-known silver-making or lacquer workshop will help you to pick up some unique gifts for your beloved ones.
+                
+                
+            
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,075,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/7.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> MEKONG DELTA - CAI BE</div>
+                Time : Full Day (Daily Departure)<br>
+                Transport : Bus<br>
+                Take a boat cruise along Mekong River.<br>
+                Pay a visit to Mekong house with Bonsai garden.<br>
+                Learn about the process of brick producing.
+                Feast on Vietnamese cuisine with Mekong specialties at a garden house.
+                
+
+            
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,265,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/8.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> CU CHI TUNNELS</div>
+                Time : Half Day (Daily Departure)<br>
+                Transport : Bus<br>
+                Watch a short documentary of Cu Chi during the war.<br>
+                Experience the network of Cu Chi Tunnels.<br>
+                Gain more knowledge about the amazing tenacity shown by the locals during Vietnam war.
+                Try some rifle shooting (optional with surcharge).
+            
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,087,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/9.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> DA NANG CITY TOUR</div>
+                Time : Half Day (Daily Departure)<br>
+                Transport : Bus<br>
+                A half day city tour in Da Nang features tho Non Nuoc carving village, the Cham Museum, a pedicab ride (30 minutes) along han River, and the Marble Mountains. During the short stop at Han market, you can buy unique hand-made souvenirs.
+            
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,287,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile is-multiline" style="margin-left: 0vw; margin-right: 0vw; margin-top: 0; border: 1px grey solid; border-radius: 10px;">
+            <div class="column is-4-desktop is-12-tablet is-12-mobile wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <img src="./img/tour/10.jpg" class="enlarge">
+            </div>
+
+            <div class="column is-4-desktop is-6-tablet is-8-mobile wow fadeIn">
+                <div style="font-weight: bold"> HOI AN ANCIENT TOWN</div>
+                Time : Half Day (Daily Departure)<br>
+                Transport : Bus<br>
+                Hoi An ancient town is declared a World Cultural Heritage Site by UNESCO in late 1999. You could walk around to visit the ancient structures comprising Japanese Covered Bridge, residential houses, ancient pagodas, etc then visit  colorful market, shops selling silk lantern, paintings and high quality clothes, handicraftmen at work and buy unique hand-made souvenirs.
+            
+
+
+
+            </div>
+            <div class="column is-4-desktop is-6-tablet is-4-mobile wow fadeIn">
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                      <a class="button is-info">
+                        Price: 1,897,000
+                      </a>
+                    </p>
+                    <!-- <input type="date" value="2020-05-05"> -->
+                </div>
+                <div class="field is-grouped is-grouped-multiline is-grouped-centered" >
+                    <div class="control button" >
+                        From &nbsp; <span class="fa fa-calendar"></span> &nbsp;05/06/2020
+                    </div>
+                    <div class="control button">
+                        To &nbsp; <span class="fa fa-calendar"></span> &nbsp;06/06/2020
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="columns has-text-centered is-mobile">
+                <div class="column is-4">ID: 1927027 <br> <a href="https://huunghianguyen.github.io/LTW/tphcm.html#">Privacy Policy</a></div>
+                <div class="column is-8">nghia.nguyenhuu@hcmut.edu.vn <br> <a href="https://huunghianguyen.github.io/LTW/tphcm.html#">Terms &amp; Conditions</a></div>
+            </div>
+        </div> 
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/myjs.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+
+    <!-- Music -->
+    <!-- <iframe src="./snd/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio loop controls id="bg-music" style="display: none">
+        <source src="./snd/silence.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
